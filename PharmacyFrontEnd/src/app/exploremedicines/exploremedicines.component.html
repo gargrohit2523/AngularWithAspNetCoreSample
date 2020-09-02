@@ -1,0 +1,18 @@
+<mat-card class="medicine-card">
+    <mat-card-header>
+        <mat-card-title>
+            <button mat-raised-button (click)='AddMedicine()'>Add Medicine</button>
+            <input class='searchInput' mat-input placeholder="Search" (keydown.enter) ="search(input.value)" #input/> 
+        </mat-card-title>
+    </mat-card-header>
+<h2 class="card-header">Available Medicines:</h2>
+<app-tablecard [showLoader]="isLoading" [tableSource]="data" [columns]="columns"></app-tablecard>
+</mat-card>
+
+<ng-template #edit let-row="row">
+    <button mat-button>
+    <mat-icon aria-hidden="false" (click)="EditMedicine(row)">
+        edit
+    </mat-icon>
+</button>
+</ng-template>

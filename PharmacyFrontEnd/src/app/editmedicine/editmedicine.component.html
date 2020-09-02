@@ -1,0 +1,53 @@
+
+
+
+<mat-card class="content-card">
+    <div class="content-card-container">
+        <h1 class="content-card-title">Edit Medicine</h1>
+        <div class="form-wrap">
+            <form (ngSubmit)="submit()" [formGroup] = "editForm">
+                <div class="form-item">
+                    <label for="name" class="form-item_label">Name:</label>
+                    <input id="name" type="text" class="form-item_input"
+                     formControlName="name" disabled>
+                </div>
+                <div class="form-item">
+                    <label for="brand" class="form-item_label">Brand:</label>
+                    <input id="brand" type="text" class="form-item_input" 
+                    formControlName="brand" disabled>
+                </div>
+
+                 <div class="form-item">
+                    <label for="price" class="form-item_label">Price:</label>
+                    <input id="price" type="text" class="form-item_input"
+                    formControlName="price" disabled>
+                </div>
+
+                <div class="form-item">
+                    <label for="quantity" class="form-item_label">Quantity:</label>
+                    <input id="quantity" type="text" class="form-item_input"
+                     formControlName="quantity" disabled>
+                </div>
+
+                <div class="form-item">
+                    <label for="expiryDate" class="form-item_label">Expiry Date:</label>
+                    <input id="expiryDate" type="text" class="form-item_input"
+                     formControlName="expiryDate" disabled>
+                </div>
+
+                <div class="form-item">
+                    <label for="notes" class="form-item_label">Notes:</label>
+                    <input id="notes"  class="form-item_input"
+                     formControlName="notes">
+                </div>
+                
+                <div class="button-container">
+                    <div class="button-container-row">
+                        <button class="form-submit" type="submit">Submit</button>
+                        <button class="form-submit" (click)="goHome()">Cancel</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+</mat-card>

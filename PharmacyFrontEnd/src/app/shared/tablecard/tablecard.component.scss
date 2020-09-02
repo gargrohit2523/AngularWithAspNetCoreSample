@@ -1,0 +1,67 @@
+.pbh-table{
+    width:100%;
+
+    th{
+        font-weight: bold;
+        color: #000;
+        text-align: left;
+    }
+
+    td{
+        font-size: 14px;
+        padding-right:15px;
+        text-align: left;
+    }
+
+
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.container{
+    position: relative;
+    min-height: 200px;
+}
+
+.table-container{
+    position: relative;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+}
+
+.loading-shade{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:0;
+    right:0;
+    z-index:2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.weight-normal{
+    font-weight: normal !important;
+}
+
+::ng-deep{
+    app-tablecard{
+        .sticky-force{
+            background: #fff;
+        }
+    }
+}

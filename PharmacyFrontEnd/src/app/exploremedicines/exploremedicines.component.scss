@@ -1,0 +1,22 @@
+$green: #46A58E;
+
+:host{
+    display:block;
+    padding: 0 30px;
+}
+
+.medicine-card{
+    position: relative;
+    &-header{
+        color: $green;
+    }
+}
+
+.text-left{
+    text-align: left;
+}
+
+.searchInput{
+    margin-left: 20px;
+}
+

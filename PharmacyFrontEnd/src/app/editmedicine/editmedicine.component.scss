@@ -1,0 +1,94 @@
+$green: #46A58E;
+$gray:#52545A;
+$red:#FF5F68;
+
+:host{
+    display:block;
+    padding: 0 30px;
+}
+
+.medicine-card{
+    position: relative;
+    &-header{
+        color: $green;
+    }
+}
+
+.text-left{
+    text-align: left; 
+}
+
+.searchInput{
+    margin-left: 20px;
+}
+
+.content-card{
+
+    border:1px solid $gray;
+    border-radius: 10px;
+    min-width: 250px;
+
+    &-title{
+        color:$green;
+        font-weight: 500;
+    }
+}
+
+.button-container{
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+
+    &-row{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+
+}
+
+
+
+    .form-item{
+        padding:10px 0;
+        display: flex;
+
+        &_label{
+            color:$green;
+            width: 32%;
+            display: inline-block;
+        }
+
+        &_input{
+            font-size:15px;     
+            border:1px solid $green;
+            padding: 5px 7px;
+            width: 400px;
+            outline: $green;
+            display: block;       
+        }
+    }
+
+.form{
+    &-submit{
+        color:#fff;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        padding: 5px 7px;
+        width: 200px;
+        height: 100%;
+        outline: $green;
+        background-color: $green;
+        margin: 0 5px;
+    }
+}
+
+::ng-deep{
+    .form-item .error{
+        border-color:$red;
+    }
+}
+
+
